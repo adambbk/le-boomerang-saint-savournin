@@ -2,6 +2,8 @@
 
 Site vitrine responsive réalisé autour du restaurant **Le Boomerang**, à Saint-Savournin (Bouches-du-Rhône).
 
+🌐 **Démo en ligne :** https://adambbk.github.io/le-boomerang-saint-savournin/
+
 Le projet présente l’établissement, ses spécialités, ses services, ses horaires et un parcours de demande de réservation par WhatsApp.
 
 ## Fonctionnalités
