@@ -1,33 +1,44 @@
 # Le Boomerang — Saint-Savournin
 
-Site vitrine responsive réalisé autour du restaurant **Le Boomerang**, à Saint-Savournin (Bouches-du-Rhône).
+Site vitrine responsive réalisé comme **projet de démonstration** autour du restaurant *Le Boomerang*, à Saint-Savournin (Bouches-du-Rhône).
 
 🌐 **Démo en ligne :** https://adambbk.github.io/le-boomerang-saint-savournin/
 
-Le projet présente l’établissement, ses spécialités, ses services, ses horaires et un parcours de demande de réservation par WhatsApp.
+> ⚠️ **Projet indépendant.** Ce site est une maquette réalisée par un développeur en formation. Il n'est ni affilié, ni commandité, ni validé par le restaurant. Pour le site officiel, voir les sources dans [`SOURCES.md`](SOURCES.md).
+
+| Desktop | Mobile |
 
 ## Fonctionnalités
 
-- page d’accueil responsive ;
-- présentation du restaurant et de sa cuisine méditerranéenne / cuisine du monde ;
-- galerie de plats à partir de visuels publics du restaurant ;
-- horaires dynamiques dans le formulaire de réservation ;
-- validation des jours d’ouverture ;
-- demande de réservation préremplie par WhatsApp ;
-- accès direct au téléphone et au site officiel ;
-- liens vers Facebook, Instagram, Tripadvisor et l’itinéraire ;
-- section événements, groupes, traiteur et terrasse ;
-- données structurées Schema.org de type `Restaurant`.
+- Page d'accueil responsive
+- Présentation du restaurant et de sa cuisine méditerranéenne et du monde
+- Galerie de plats
+- **Formulaire de demande de réservation** : horaires dynamiques selon le jour, validation des jours d'ouverture, message prérempli envoyé par WhatsApp
+- Accès direct au téléphone, au site officiel et à l'itinéraire
+- Liens vers Facebook, Instagram et Tripadvisor
+- Section événements, groupes, traiteur et terrasse
+- Données structurées **Schema.org / JSON-LD** de type `Restaurant`
 
 ## Technologies
 
 - HTML5
 - CSS3
-- JavaScript
-- responsive design
+- JavaScript (sans framework)
+- Responsive design
 - Schema.org / JSON-LD
+- Hébergement : GitHub Pages
 
-## Lancer le site
+## Structure du projet
+
+```
+├── index.html     Structure de la page
+├── styles.css     Mise en page et responsive
+├── app.js         Formulaire de réservation, horaires, validation
+├── SOURCES.md     Sources des informations publiques utilisées
+└── README.md
+```
+
+## Lancer le projet
 
 Le projet est entièrement statique :
 
@@ -35,16 +46,30 @@ Le projet est entièrement statique :
 python -m http.server 8000
 ```
 
-Puis ouvrir `http://localhost:8000`.
+Puis ouvre `http://localhost:8000`.
 
-## Réservation
+## À propos de la réservation
 
-Le formulaire ne prétend pas confirmer automatiquement une table. Il prépare une **demande de réservation WhatsApp** au numéro public du restaurant. La réservation n’est considérée comme confirmée qu’après réponse de l’établissement.
+Le formulaire ne confirme pas automatiquement une table. Il prépare une **demande de réservation WhatsApp** à destination du numéro public du restaurant. Une réservation n'est confirmée qu'après réponse de l'établissement.
 
-## Sources
+## Ce que ce projet démontre
 
-Les informations publiques utilisées pour cette démonstration sont recensées dans `SOURCES.md`. Les visuels sont chargés depuis les sources publiques officielles citées ; pour une mise en production commerciale réelle, les fichiers devraient être hébergés localement avec l’accord du restaurant.
+- Intégration responsive d'une maquette de site vitrine
+- Validation de formulaire en JavaScript (jours et horaires d'ouverture)
+- Génération d'un lien WhatsApp prérempli
+- Référencement technique avec données structurées Schema.org
+
+## Limites connues
+
+- Les images sont chargées depuis des sources publiques officielles. Pour une vraie mise en production, il faudrait les héberger localement (format WebP compressé) avec l'accord du restaurant.
+- Les informations (horaires, carte) proviennent de sources publiques et peuvent changer.
+
+## Améliorations prévues
+
+- Hébergement local des images optimisées
+- Audit Lighthouse (performance, accessibilité, SEO) et corrections
+- Balises Open Graph pour le partage sur les réseaux
 
 ## Auteur
 
-Adam Bouberka
+Adam Bouberka — [GitHub](https://github.com/adambbk) · [LinkedIn](https://www.linkedin.com/in/adam-bouberka-741467334/)
